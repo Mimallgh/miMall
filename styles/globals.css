@@ -18,3 +18,19 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.drop-down {
+  @apply bg-white/10 text-black tracking-tight gap-3 flex flex-col content-between
+}
+
+
+.footer{
+  @apply shadow-inner h-[5rem] bg-green-600 px-4 flex justify-center pt-3
+  text-white/50
+}
+
+.sell{
+  @apply w-screen bg-green-600/50 px-5 min-h-[2rem] pt-3 text-orange-500
+  font-serif tracking-wide
+}
