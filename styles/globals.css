@@ -21,7 +21,7 @@ a {
 
 
 .drop-down {
-  @apply bg-white/10 text-black tracking-tight gap-3 flex flex-col content-between
+  @apply bg-white/80 text-black tracking-tight gap-3 flex flex-col content-between
 }
 
 
