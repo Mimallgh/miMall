@@ -26,11 +26,26 @@ a {
 
 
 .footer{
-  @apply shadow-inner h-[5rem] bg-green-600 px-4 flex justify-center pt-3
+  @apply shadow-inner min-h-[20rem] bg-[#ff00c8] px-4 flex justify-center pt-3
   text-white/50
 }
 
 .sell{
-  @apply w-screen bg-green-600/50 px-5 min-h-[2rem] pt-3 text-orange-500
+  @apply w-screen bg-white px-5 min-h-[2rem] top-0 fixed pt-5 text-orange-500
   font-serif tracking-wide
+}
+
+.card{
+  @apply mb-5 block rounded-lg  border  border-gray-200 shadow-md
+}
+
+.primary-button{
+  @apply bg-amber-300 py-2 px-4 rounded-md shadow outline-none hover:bg-amber-400 active:bg-amber-500 
+}
+.slide_bg{
+ @apply mb-4  min-h-[20rem] bg-[#fb97e0] w-screen 
+}
+
+.slide_button{
+  @apply h-auto w-10 bg-yellow-800 font-extrabold text-3xl 
 }
