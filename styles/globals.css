@@ -21,18 +21,18 @@ a {
 
 
 .drop-down {
-  @apply bg-white/80 text-black tracking-tight gap-3 flex flex-col content-between
+  @apply bg-white/80 text-black tracking-tight gap-y-5 px-5 py-5 flex flex-col content-between
 }
 
 
 .footer{
-  @apply shadow-inner min-h-[2rem]  bg-[#ff00c8] px-4  justify-center pt-5
-  text-white/50 grid grid-rows-none
+  @apply shadow-inner  bg-[#ffff] 
 }
 
+
 .sell{
-  @apply w-screen bg-white px-5 min-h-[2rem] top-0 fixed pt-5 text-orange-500
-  font-serif tracking-wide
+  @apply w-screen bg-green-400 px-5 h-[2rem] top-0 fixed pt-1 text-white
+  font-serif tracking-wide 
 }
 
 .card{
@@ -43,9 +43,10 @@ a {
   @apply bg-amber-300 py-2 px-4 rounded-md shadow outline-none hover:bg-amber-400 active:bg-amber-500 
 }
 .slide_bg{
- @apply mb-4  min-h-[20rem] bg-[#fb97e0] w-screen 
+ @apply mb-4  min-h-[20rem] bg-[#fb97e0] w-screen
+
 }
 
 .slide_button{
-  @apply h-auto w-10 bg-yellow-800 font-extrabold text-3xl 
+  @apply h-auto w-10  font-extrabold text-3xl 
 }
