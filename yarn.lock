@@ -71,6 +71,15 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@ionic/core@^6.3.7":
+  version "6.3.7"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.3.7.tgz#53ef3e101b7d0949519736e104aa5c57aad6b4f0"
+  integrity sha512-HWntdPsc4lVHHwz7kY2BSQteafwXsPxc8y5wAdfeA8woRLGse+1Vq00CDUihf7tTUflM1CdmVgGtyYlDAnO2fA==
+  dependencies:
+    "@stencil/core" "^2.18.0"
+    ionicons "^6.0.4"
+    tslib "^2.1.0"
+
 "@next/env@13.0.2":
   version "13.0.2"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.0.2.tgz#5fbd7b4146175ae406edfb4a38b62de8c880c09d"
@@ -414,6 +423,11 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
+
+"@stencil/core@^2.18.0":
+  version "2.19.3"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.19.3.tgz#34a35d11982070801300d984ab8cbf9353fac698"
+  integrity sha512-rb6pBWTfD5xDg5M/uEJUeclatE/tqBE3zCCNrEB47AtdkNCzC9fOikdzCYbpdAEpU6GvC60REFr0bd8QFUjn3Q==
 
 "@swc/helpers@0.4.11":
   version "0.4.11"
@@ -1411,6 +1425,13 @@ invariant@^2.2.4:
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
   dependencies:
     loose-envify "^1.0.0"
+
+ionicons@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-6.0.4.tgz#ab7aa439b7f17f29e0ef0a28568b4920c3167bfd"
+  integrity sha512-uDNOkBo0OVYV+kIhb51g9mb7r3Z0b+78GPZQBsjXuaetNmrB/mNTqN/uFtO+vxL/rQySKjzk8qeKJI5NWL9Ueg==
+  dependencies:
+    "@stencil/core" "^2.18.0"
 
 is-bigint@^1.0.1:
   version "1.0.4"
