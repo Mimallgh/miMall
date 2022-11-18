@@ -4,7 +4,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import Slider from "../components/Slider";
 import Nav from "../components/Nav";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 
 const Layout = ({ title, children }) => {
  
