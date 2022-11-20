@@ -1,69 +1,64 @@
-import React, {useState, useEffect} from 'react'
+import React from "react";
+import { Zoom } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 const Slider = () => {
+  const images = [
+    "slider/me1.jpg",
+    "slider/pic2.jpg",
+    "slider/pic3.jpg",
+    "slider/pic4.jpg",
+    "slider/pic5.jpg",
+    "slider/pic6.jpg",
+  ];
 
-     const [index, setIndex] = useState(0);
-     const [index1, setIndex1] = useState(1);
+  const zoomInProperties = {
+    indicators: true,
+    scale: 1.2,
+    duration: 5000,
+    transitionDuration: 500,
+    infinite: true,
 
-     const [transL, setTransL] = useState(false);
-     const [transR, setTransR] = useState(false);
+    // prevArrow: (
+    //   <div style={{ width: "30px", marginRight: "-30px", cursor: "pointer" }}>
+    //     <svg
+    //       xmlns="http://www.w3.org/2000/svg"
+    //       viewBox="0 0 512 512"
+    //       fill="#2e2e2e"
+    //     >
+    //       <path d="M242 180.6v-138L0 2561242 213.4V331.2h270v180.6z" />
+    //     </svg>
+    //   </div>
+    // ),
 
-     useEffect(() => {
-       if (transL) {
-         setTimeout(() => {
-           setTransL(false);
-           setIndex((index + 1) % slider.length);
-           setIndex1((index1 + 1) % slider.length);
-         }, 800);
-       }
-     }, []);
-
-     const slider = [
-       "me1.jpg",
-       "pic2.jpg",
-       "pic3.jpg",
-       "pic4.jpg",
-       "pic5.jpg",
-       "pic6.jpg",
-     ];
-
-     const handlePrev = () => {};
-     const handleNext = () => {
-       setTransL(true);
-       setTransR(false);
-     };
+    // nextArrow: (
+    //   <div style={{ width: "30px", marginLeft: "-30px", cursor: "pointer" }}>
+    //     <svg
+    //       xmlns="http://www.w3.org/2000/svg"
+    //       viewBox="0 0 512 512"
+    //       fill="#2e2e2e"
+    //     >
+    //       <path d="M512 256L270 42.6v138.2H0v150.6h270v138z" />
+    //     </svg>
+    //   </div>
+    // ),
+  };
 
   return (
-    <>
-      <div className="slide_bg flex justify-center space-x-4 mt-4 ">
-        <button className="slide_button" onClick={handlePrev}>
-          {"<"}{" "}
-        </button>
-        <div className="relative w-96  z-20 h-56 overflow-hidden rounded-xl">
-          <img
-            className={`absolute object-contain z-20 w-full h-full p-4 ${
-              transL
-                ? "transition duration-500 ease-linear -translate-x-full"
-                : ""
-            }`}
-            src={slider[index]}
-            alt=""
-          />
-
-          <img
-            className={`absolute object-contain z-0 w-full h-full p-4 
-                
-                ${transL ? "animate-slideR" : ""}`}
-            src={slider[index1]}
-            alt=""
-          />
-        </div>
-        <button className="slide_button" onClick={handleNext}>
-          {">"}{" "}
-        </button>
-      </div>
-    </>
+    <div className="mt-5  bg-[#fb97e0]">
+      {/* <h1 className="">hello</h1> */}
+      <Zoom {...zoomInProperties}>
+        {images.map((each, index) => (
+          <div key={index} className=" w-screen h-[20rem]">
+            <img
+              src={each}
+              className="w-screen object-cover pt-5 lg:object-cover cursor-pointer  rounded-lg shadow-xl"
+            />
+          </div>
+        ))}
+      </Zoom>
+    </div>
   );
-}
+};
 
-export default Slider
+export default Slider;

@@ -7,7 +7,6 @@ import Nav from "../components/Nav";
 import Footer from "../components/footer/Footer";
 
 const Layout = ({ title, children }) => {
- 
   return (
     <>
       <Head>
@@ -17,10 +16,9 @@ const Layout = ({ title, children }) => {
       </Head>
 
       <div className="flex min-h-screen pt-[6rem] flex-col justify-between ">
-     
-     <Slider />
+        <Slider />
 
-       <Nav />
+        <Nav />
         <main>{children}</main>
 
         <Footer />
