@@ -42,11 +42,3 @@ a {
 .primary-button{
   @apply bg-amber-300 py-2 px-4 rounded-md shadow outline-none hover:bg-amber-400 active:bg-amber-500 
 }
-.slide_bg{
- @apply mb-4  min-h-[20rem] bg-[#fb97e0] w-screen
-
-}
-
-.slide_button{
-  @apply h-auto w-10  font-extrabold text-3xl 
-}
