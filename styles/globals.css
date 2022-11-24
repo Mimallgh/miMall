@@ -37,8 +37,20 @@ a {
 
 .card{
   @apply mb-5 block rounded-lg  border  border-gray-200 shadow-md
+  mt-60
 }
 
 .primary-button{
   @apply bg-amber-300 py-2 px-4 rounded-md shadow outline-none hover:bg-amber-400 active:bg-amber-500 
+}
+
+
+.tpt{
+  @apply grid sm:grid-cols-1  lg:grid-cols-3 md:grid-cols-2 mx-5 px-5 lg:flex justify-center
+   items-center capitalize text-black/75 lg:text-2xl lg:gap-48 font-serif
+}
+
+.top-card1{
+  @apply  shadow-lg h-[8rem] w-[15rem] bg-green-500
+  rounded-md 
 }
