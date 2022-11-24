@@ -45,14 +45,14 @@ const Slider = () => {
   };
 
   return (
-    <div className="mt-5  bg-[#fb97e0]">
+    <div className="mt-5  bg-[#fb97e0] lg:h-full">
       {/* <h1 className="">hello</h1> */}
       <Zoom {...zoomInProperties}>
         {images.map((each, index) => (
-          <div key={index} className=" w-screen h-[20rem]">
+          <div key={index} className=" w-screen h-[20rem] lg:h-full">
             <img
               src={each}
-              className="w-screen object-cover pt-5 lg:object-cover cursor-pointer  rounded-lg shadow-xl"
+              className="w-screen lg:h-full object-cover pt-5 lg:object-cover cursor-pointer  rounded-lg shadow-xl"
             />
           </div>
         ))}
