@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Slider from "../components/Slider";
 import Nav from "../components/Nav";
 import Footer from "../components/footer/Footer";
+import TopProdTrend from "./TopProdTrend";
 
 const Layout = ({ title, children }) => {
   return (
@@ -16,10 +17,16 @@ const Layout = ({ title, children }) => {
       </Head>
 
       <div className="flex min-h-screen pt-[6rem] flex-col justify-between ">
-        <Slider />
+        <div className="">
+          <Slider />
+        </div>
+
+        <div className="mt-5">
+          <TopProdTrend />
+        </div>
 
         <Nav />
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
 
         <Footer />
       </div>
