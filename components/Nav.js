@@ -21,14 +21,14 @@ const Nav = () => {
     <>
       <header>
         {/* To sell on the site */}
-        <div className="sell text-1xl z-20">
+        <div className="sell text-1xl z-20 text-white/50">
           <Link href="/sell">Sell on MiMall</Link>
         </div>
 
-        <nav className="h-[5rem] z-20 mt-8 top-0 fixed w-screen shadow-md  bg-gray-900 px-4 flex justify-between items-center">
+        <nav className="h-[5rem] z-20 top-0 fixed w-screen shadow-md  bg-gray-900 px-4 flex justify-between items-center">
           <Link
             href="/"
-            className="px-2 py-4 text-[#380648] font-bold text-3xl font-serif"
+            className="px-2 py-4 text-[#fff] font-bold text-3xl font-serif"
           >
             {/* TODO: Logo  */}
             MiMall
@@ -107,35 +107,35 @@ const Nav = () => {
                 </d>
               </div>
             </form>
-            <div className="flex justify-between items-end">
-              {/* <ul className="gap-10  hidden md:flex"> */}
-              <Link
-                href="/account"
-                className="capitalize gap-2 flex text-[#ffff] text-2lg tracking-wide font-serif"
-              >
-                <VscAccount className="flex justify-between " size="25" />
-                account
-              </Link>
+            {/* <div className="flex justify-between items-end"> */}
+            {/* <ul className="gap-10  hidden md:flex"> */}
+            <Link
+              href="/account"
+              className="capitalize gap-2 flex text-[#ffff] text-2lg tracking-wide font-serif"
+            >
+              <VscAccount className="flex justify-between " size="25" />
+              account
+            </Link>
 
-              <Link
-                href="/help"
-                className="capitalize gap-2 flex text-[#ffff] text-2lg tracking-wide font-serif"
-              >
-                <BiHelpCircle className="flex" size="25" />
-                help
-              </Link>
+            <Link
+              href="/help"
+              className="capitalize gap-2 flex text-[#ffff] text-2lg tracking-wide font-serif"
+            >
+              <BiHelpCircle className="flex" size="25" />
+              help
+            </Link>
 
-              <Link
-                href="/cart"
-                className="capitalize gap-2 flex text-[#ffff] text-2lg tracking-wide font-serif"
-              >
-                <AiOutlineShoppingCart
-                  className="flex justify-between"
-                  size="25"
-                />
-                cart
-              </Link>
-            </div>
+            <Link
+              href="/cart"
+              className="capitalize gap-2 flex text-[#ffff] text-2lg tracking-wide font-serif"
+            >
+              <AiOutlineShoppingCart
+                className="flex justify-between"
+                size="25"
+              />
+              cart
+            </Link>
+            {/* </div> */}
           </ul>
 
           {/* Sidebar */}
